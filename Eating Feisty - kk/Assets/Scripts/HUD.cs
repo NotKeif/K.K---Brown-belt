@@ -20,9 +20,86 @@ public class HUD : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        UpdateStars();
     }
 
+    public void UpdateStars()
+    {
+        for (int i = 0; i < stars.Length; i++)
+        {
+            if (i == starIndex)
+            {
+                stars[i].enabled = true;
+            }
+            else
+            {
+                stars[i].enabled = false;
+            }
+        }
+    }
+
+    public void SetScore(int score)
+    {
+        scoreText.text = score.ToString();
+
+        int visibleStar = 0;
+        if (score >= level.score1Star && score < level.score2Star)
+        {
+            visibleStar = 1;
+        } else if (score >= level.score2Star && score < level.score3Star)
+        {
+            visibleStar = 2;
+        } else if (score >= level.score3Star)
+        {
+            visibleStar = 3;
+        }
+        starIndex = visibleStar;
+        UpdateStars();
+    }
+
+    public void SetTarget(int target)
+    {
+        targetText.text = target.ToString();
+    }
+
+    public void SetRemaining(int remaining)
+    {
+        remainingText.text = remaining.ToString();
+    }
+
+    public void SetRemaining(string remaining)
+    {
+        remainingText.text = remaining;
+    }
+
+    public void SetLevelType(Level.LevelType type)
+    {
+        switch (type)
+        {
+            case Level.LevelType.MOVES:
+                remainingSubtext.text = "Moves Remaining";
+                targetSubtext.text = "Target Score";
+                break;
+            case Level.LevelType.OBSTACLE:
+                remainingSubtext.text = "Moves Remaining";
+                targetSubtext.text = "Dishes Remaining";
+                break;
+            case Level.LevelType.TIMER:
+                remainingSubtext.text = "Time Remaining";
+                targetSubtext.text = "Target Score";
+                break;
+        }
+    }
+
+    public void OnGameWin(int score)
+    {
+        isGameOver = true;
+    }
+
+    public void OnGameLose()
+    {
+        isGameOver = false;
+    }
     // Update is called once per frame
     void Update()
     {
