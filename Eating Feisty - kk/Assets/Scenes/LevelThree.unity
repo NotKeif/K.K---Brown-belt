@@ -225,7 +225,7 @@ MonoBehaviour:
   score1Star: 50000
   score2Star: 65000
   score3Star: 75000
-  timeInSeconds: 90
+  timeInSeconds: 4
   targetScore: 50000
 --- !u!4 &245619826
 Transform:
@@ -299,6 +299,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 273cfb26af8d053409bdd656dacee8f7, type: 3}
+--- !u!114 &466877046 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1191362575, guid: d03411de9ae79a244b2a0c777be39bea, type: 3}
+  m_PrefabInstance: {fileID: 1338158204}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 683bef5d29cc665419fc064f329b14a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &581336195
 GameObject:
   m_ObjectHideFlags: 0
@@ -557,6 +568,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1228301984 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8991332416526419456, guid: d03411de9ae79a244b2a0c777be39bea, type: 3}
+  m_PrefabInstance: {fileID: 1338158204}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1338158204
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -564,10 +580,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1191362575, guid: d03411de9ae79a244b2a0c777be39bea, type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 1338158206}
+    - target: {fileID: 1191362575, guid: d03411de9ae79a244b2a0c777be39bea, type: 3}
+      propertyPath: scoreParent
+      value: 
+      objectReference: {fileID: 1228301984}
     - target: {fileID: 3883306846161901833, guid: d03411de9ae79a244b2a0c777be39bea, type: 3}
       propertyPath: level
       value: 
       objectReference: {fileID: 245619825}
+    - target: {fileID: 3883306846161901833, guid: d03411de9ae79a244b2a0c777be39bea, type: 3}
+      propertyPath: gameOver
+      value: 
+      objectReference: {fileID: 466877046}
     - target: {fileID: 8570108765304321347, guid: d03411de9ae79a244b2a0c777be39bea, type: 3}
       propertyPath: m_Name
       value: Game UI Canvas
@@ -667,5 +695,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aee88fe487f14d74990fb98228f06574, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1338158206 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1435398808850994034, guid: d03411de9ae79a244b2a0c777be39bea, type: 3}
+  m_PrefabInstance: {fileID: 1338158204}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

@@ -603,10 +603,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1191362575, guid: d03411de9ae79a244b2a0c777be39bea, type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 1514873589}
+    - target: {fileID: 1191362575, guid: d03411de9ae79a244b2a0c777be39bea, type: 3}
+      propertyPath: scoreParent
+      value: 
+      objectReference: {fileID: 1514873591}
     - target: {fileID: 3883306846161901833, guid: d03411de9ae79a244b2a0c777be39bea, type: 3}
       propertyPath: level
       value: 
       objectReference: {fileID: 245619825}
+    - target: {fileID: 3883306846161901833, guid: d03411de9ae79a244b2a0c777be39bea, type: 3}
+      propertyPath: gameOver
+      value: 
+      objectReference: {fileID: 1514873590}
     - target: {fileID: 8570108765304321347, guid: d03411de9ae79a244b2a0c777be39bea, type: 3}
       propertyPath: m_Name
       value: Game UI Canvas
@@ -708,3 +720,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aee88fe487f14d74990fb98228f06574, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1514873589 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1435398808850994034, guid: d03411de9ae79a244b2a0c777be39bea, type: 3}
+  m_PrefabInstance: {fileID: 1514873587}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1514873590 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1191362575, guid: d03411de9ae79a244b2a0c777be39bea, type: 3}
+  m_PrefabInstance: {fileID: 1514873587}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 683bef5d29cc665419fc064f329b14a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1514873591 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8991332416526419456, guid: d03411de9ae79a244b2a0c777be39bea, type: 3}
+  m_PrefabInstance: {fileID: 1514873587}
+  m_PrefabAsset: {fileID: 0}
